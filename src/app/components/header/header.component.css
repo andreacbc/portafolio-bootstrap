@@ -1,0 +1,67 @@
+header .nav {
+	min-height: 80px;
+	overflow: hidden;
+	background: #fff;
+}
+
+header .logo h2,
+header .logo p {
+	font-size: 1rem;
+}
+
+header .logo .icono {
+	color: #bfbfbf;
+}
+
+header .logo svg {
+	width: 1.25rem;
+	height: 1.25rem;
+}
+
+header .logo p {
+	color: #777777;
+}
+
+header .menu .c1 { background: #3da5e2; }
+header .menu .c2 { background: #005385; }
+header .menu .c3 { background: #003855; }
+
+header .menu .c1:hover { background: #1ba0ef; }
+header .menu .c2:hover { background: #00426a; }
+header .menu .c3:hover { background: #002d44; }
+
+@media screen and (max-width: 20.63rem){
+	header .logo h2,
+	header .logo p {
+		font-size: 0.70rem ;
+	}
+
+	header .menu span {
+		font-size: 0.50rem ;
+	}
+
+	header .logo svg {
+		width: 1rem;
+		height: 1rem;
+	}
+}
+
+@media screen and (max-width: 62rem){
+	.logo {
+		height: 4.75rem;
+	}
+
+	header .menu {
+		min-height: 4.75rem;
+	}
+
+	header .menu a {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 62rem){
+	header .nav .logo {
+		padding-left: 1.5rem;
+	}
+}

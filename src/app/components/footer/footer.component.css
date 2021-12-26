@@ -1,0 +1,43 @@
+.redes-sociales {
+    padding: 2.5rem 0;
+    margin-bottom: 2.5rem;
+}
+
+.redes-sociales .icono {
+    width: 5rem;
+    height: 5rem;
+    color: #fff;
+    background: #cbcbcb;
+    /* display: inline-block; */
+    margin: 0rem 1.25rem;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: all .3s ease;
+}
+
+.redes-sociales .icono svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.redes-sociales .twitter {
+    background: #1da1f2;
+}
+.redes-sociales .instagram {
+    background: #833ab4;
+}
+.redes-sociales .facebook {
+    background: #3b5998;
+}
+
+@media screen and (max-width: 27.5rem){
+    .redes-sociales .icono {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .redes-sociales .icono svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}

@@ -1,0 +1,26 @@
+<div class="row portafolio g-0 px-4 mb-5" id="portafolio">
+    <div class="col">
+        <h2 class="titulo text-center py-5">Portafolio</h2>
+        <div class="row galeria">
+            <div class="contenedor-imagen mb-4" *ngFor="let imagen of imagenes, index as i"
+            [ngClass]="{'col-lg-8' : i==1 || i==2,
+                        'col-lg-4' : i==0 || i==3 || i==4 || i==5 || i==6,
+                        'col-12' : i==1|| i==2 || i==6,
+                        'col-6': i==0 || i==3 ||i==4 || i==5 }">
+                <a data-bs-toggle="modal" data-bs-target="#modal-galeria">
+                    <img [src]="imagen.img"  class="d-block w-100" [alt]="imagen.nombre" (click)="modal(imagen)">
+                </a>
+            </div>
+        </div>
+
+        <!-- Ventana Modal -->
+        <div class="modal fade" id="modal-galeria" tabindex="-1" aria-labelledby="modal-galeria" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content d-flex">
+                    <button class="btn-close btn-close-white align-self-end mb-2" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    <img src=" {{ modalImagen }}" id="imagen-modal" alt="{{modalNombre}}" class="img-thumbnail">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
